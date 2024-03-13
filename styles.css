@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  .wrapper {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, #035455, 5%, #035455, 50%, #030423);
+    position: absolute;
+  }
+  .wrapper h1 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 888;
+    text-transform: uppercase;
+  }
+  .wrapper div {
+    height: 20px;
+    width: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 50px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    animation: 4s linear infinite;
+  }
+  div .dot {
+    height: 5px;
+    width: 5px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 20%;
+    right: 20%;
+  }
+  .wrapper div:nth-child(1) {
+    top: 20%;
+    left: 20%;
+    animation: animate 8s linear infinite;
+  }
+  .wrapper div:nth-child(2) {
+    top: 60%;
+    left: 80%;
+    animation: animate 10s linear infinite;
+  }
+  .wrapper div:nth-child(3) {
+    top: 40%;
+    left: 40%;
+    animation: animate 3s linear infinite;
+  }
+  .wrapper div:nth-child(4) {
+    top: 66%;
+    left: 30%;
+    animation: animate 7s linear infinite;
+  }
+  .wrapper div:nth-child(5) {
+    top: 90%;
+    left: 10%;
+    animation: animate 9s linear infinite;
+  }
+  .wrapper div:nth-child(6) {
+    top: 30%;
+    left: 60%;
+    animation: animate 5s linear infinite;
+  }
+  .wrapper div:nth-child(7) {
+    top: 70%;
+    left: 20%;
+    animation: animate 8s linear infinite;
+  }
+  .wrapper div:nth-child(8) {
+    top: 75%;
+    left: 60%;
+    animation: animate 10s linear infinite;
+  }
+  .wrapper div:nth-child(9) {
+    top: 50%;
+    left: 50%;
+    animation: animate 6s linear infinite;
+  }
+  .wrapper div:nth-child(10) {
+    top: 45%;
+    left: 20%;
+    animation: animate 10s linear infinite;
+  }
+  .wrapper div:nth-child(11) {
+    top: 10%;
+    left: 90%;
+    animation: animate 9s linear infinite;
+  }
+  .wrapper div:nth-child(12) {
+    top: 20%;
+    left: 70%;
+    animation: animate 7s linear infinite;
+  }
+  .wrapper div:nth-child(13) {
+    top: 20%;
+    left: 20%;
+    animation: animate 8s linear infinite;
+  }
+  .wrapper div:nth-child(14) {
+    top: 60%;
+    left: 5%;
+    animation: animate 6s linear infinite;
+  }
+  .wrapper div:nth-child(15) {
+    top: 90%;
+    left: 80%;
+    animation: animate 9s linear infinite;
+  }
+  @keyframes animate {
+    0% {
+      transform: scale(0) translateY(0) rotate(70deg);
+    }
+    100% {
+      transform: scale(1.3) translateY(-100px) rotate(360deg);
+    }
+  }
+
+  /*AMIMATED BANNER*/
+  
+  body {
+    margin-top:2rem;
+  }
+  /*a {
+    color: red;
+    transition: color 0.3s ease-in 0.3s;
+  }
+  a:hover {
+    color: fuchsia;
+  }*/
+  .banner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: stretch;
+  }
+  .banner > div {
+    padding: 1rem;
+  }
+  .logo {
+    
+   
+    flex: 0 1 auto;
+    background-color: #035455;
+  }
+  .messages {
+    flex: 1 1 auto;
+    background-color: #035455;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: center;
+  }
+  .messages div {
+    /*animation: move .5s ease-in-out 0.5s 4 alternate;*/
+    overflow:hidden;
+    border: 1px solid transparent;
+    font-family: Century Gothic, sans-serif;
+  }
+  .message-topic {
+    color: red;
+    font-weight: bold;
+    font-size: 3.25rem;
+    margin-right: 1rem;
+    padding: 1.5rem 1rem 1.5rem 0;
+  }
+  .message-content {
+    font-size: 1.85rem;
+    font-weight: bold;
+    color: red;
+  }
+  #topic-1 {
+    animation: showup-1 7s infinite;
+    border-right: 1px solid #0e0e0e;
+  }
+  #message-1 {
+    width:0px;
+    height:0px;
+    animation: reveal-1 7s infinite;
+  }
+  #message-1 span {
+    margin-left:-50vw;
+    animation: slidein-1 7s infinite;
+  }
+  /*
+  #topic-2 {
+    animation: showup-2 30s infinite;
+    border-right: 1px solid #646;
+  }
+  #message-2 {
+    width:0px;
+    height:0px;
+    animation: reveal-2 30s infinite;
+  }
+  #message-2 span {
+    margin-left:-600px;
+    animation: slidein-2 30s infinite;
+  }
+  
+  #topic-3 {
+    animation: showup-3 30s infinite;
+    border-right: 1px solid #616;
+  }
+  #message-3 {
+    width:0px;
+    height:0px;
+    animation: reveal-3 30s infinite;
+  }
+  #message-3 span {
+    margin-left:-600px;
+    animation: slidein-3 30s infinite;
+  }*/
+  /* This is old; Keep as a backup reference */
+  /*#topic-2 {
+    animation: showup-2 7s infinite;
+    animation-delay: 8s;
+    border-right: 1px solid #CCC;
+  }
+  #message-2 {
+    width:0px;
+    animation: reveal-2 7s infinite;
+    animation-delay: 8s;
+  }
+  #message-2 span {
+    margin-left:-600px;
+    animation: slidein-2 7s infinite;
+  }*/
+  
+  /* This is the animation code. */
+  
+  @keyframes showup-1 {
+      0% {opacity:0;border-right-color: transparent;}
+      20% {opacity:1;}
+      35% {border-right-color: #5058e9;}
+      80% {opacity:1;}
+      100% {opacity:0;}
+  }
+  @keyframes reveal-1 {
+      0% {opacity:0;width:0px;height:0;}
+      20% {opacity:1;width:0px;height:30px;}
+      30% {width:550px;}
+      80% {opacity:1;}
+      100% {opacity:0;width:550px;height:30px;}
+  }
+  @keyframes slidein-1 {
+      0% { margin-left:-600px; }
+      20% { margin-left:-600px; }
+      30% { margin-left:0px; }
+      100% { margin-left:0px; }
+  }
+  
+  /* Test animation CSS; This worked at the 7-second duration */
+  /*
+  @keyframes showup-1 {
+      0% {opacity:0;border-right-color: transparent;}
+      20% {opacity:1;}
+      35% {border-right-color: #AAA;}
+      80% {opacity:1;}
+      100% {opacity:0;}
+  }
+  @keyframes reveal-1 {
+      0% {opacity:0;width:0px;height:0;}
+      20% {opacity:1;width:0px;height:30px;}
+      30% {width:550px;}
+      80% {opacity:1;}
+      100% {opacity:0;width:550px;height:30px;}
+  }
+  @keyframes slidein-1 {
+      0% { margin-left:-600px; }
+      20% { margin-left:-600px; }
+      30% { margin-left:0px; }
+      100% { margin-left:0px; }
+  }*/
+  
+  
+  
+  /*@keyframes move {
+     0% { transform: translateX(0); }
+     50% { transform: translateX(20px); }
+     100% { transform: translateX(100px); }
+  }*/
+  
+  
+  
