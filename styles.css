@@ -9,31 +9,33 @@
     position: absolute;
   }
   .wrapper h1 {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    font-family: sans-serif;
-    letter-spacing: 1px;
-    word-spacing: 2px;
-    color: #f10606;
-    font-size: 40px;
-    font-weight: 888;
-    text-transform: uppercase;
-  }
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      font-family: Stencil Std, fantasy;
+      letter-spacing: 2px;
+      word-spacing: 2px;
+      color: #f14906;
+      font-size: 40px;
+      font-weight: 777;
+      text-transform: uppercase;
+    }
+               /*BUBBLES*/
+
   .wrapper div {
-    height: 20px;
-    width: 20px;
+    height: 10px;
+    width: 10px;
     border: 2px solid rgba(255, 255, 255, 0.7);
     border-radius: 50px;
     position: absolute;
     top: 10%;
     left: 10%;
-    animation: 4s linear infinite;
+    animation: 20s linear infinite;
   }
   div .dot {
-    height: 5px;
-    width: 5px;
+    height: 2px;
+    width: 2px;
     border-radius: 50px;
     background: rgba(255, 255, 255, 0.5);
     position: absolute;
@@ -43,7 +45,7 @@
   .wrapper div:nth-child(1) {
     top: 20%;
     left: 20%;
-    animation: animate 8s linear infinite;
+    animation: animate 20s linear infinite;
   }
   .wrapper div:nth-child(2) {
     top: 60%;
@@ -53,27 +55,27 @@
   .wrapper div:nth-child(3) {
     top: 40%;
     left: 40%;
-    animation: animate 3s linear infinite;
+    animation: animate 15s linear infinite;
   }
   .wrapper div:nth-child(4) {
     top: 66%;
     left: 30%;
-    animation: animate 7s linear infinite;
+    animation: animate 10s linear infinite;
   }
   .wrapper div:nth-child(5) {
     top: 90%;
     left: 10%;
-    animation: animate 9s linear infinite;
+    animation: animate 10s linear infinite;
   }
   .wrapper div:nth-child(6) {
     top: 30%;
     left: 60%;
-    animation: animate 5s linear infinite;
+    animation: animate 14s linear infinite;
   }
   .wrapper div:nth-child(7) {
     top: 70%;
     left: 20%;
-    animation: animate 8s linear infinite;
+    animation: animate 10s linear infinite;
   }
   .wrapper div:nth-child(8) {
     top: 75%;
@@ -83,7 +85,7 @@
   .wrapper div:nth-child(9) {
     top: 50%;
     left: 50%;
-    animation: animate 6s linear infinite;
+    animation: animate 15s linear infinite;
   }
   .wrapper div:nth-child(10) {
     top: 45%;
@@ -98,22 +100,22 @@
   .wrapper div:nth-child(12) {
     top: 20%;
     left: 70%;
-    animation: animate 7s linear infinite;
+    animation: animate 12s linear infinite;
   }
   .wrapper div:nth-child(13) {
     top: 20%;
     left: 20%;
-    animation: animate 8s linear infinite;
+    animation: animate 13s linear infinite;
   }
   .wrapper div:nth-child(14) {
     top: 60%;
     left: 5%;
-    animation: animate 6s linear infinite;
+    animation: animate 9s linear infinite;
   }
   .wrapper div:nth-child(15) {
     top: 90%;
     left: 80%;
-    animation: animate 9s linear infinite;
+    animation: animate 14s linear infinite;
   }
   @keyframes animate {
     0% {
@@ -145,7 +147,7 @@
     align-items: stretch;
   }
   .banner > div {
-    padding: 1rem;
+    padding: 4rem;
   }
   .logo {
     
@@ -167,10 +169,10 @@
     /*animation: move .5s ease-in-out 0.5s 4 alternate;*/
     overflow:hidden;
     border: 1px solid transparent;
-    font-family: Century Gothic, sans-serif;
+    font-family: Stencil Std, fantasy;
   }
   .message-topic {
-    color: red;
+    color: #f14906;
     font-weight: bold;
     font-size: 3.25rem;
     margin-right: 1rem;
@@ -179,20 +181,20 @@
   .message-content {
     font-size: 1.85rem;
     font-weight: bold;
-    color: red;
+    color:#f14906;
   }
   #topic-1 {
-    animation: showup-1 7s infinite;
-    border-right: 1px solid #0e0e0e;
+    animation: showup-1 10s infinite;
+    border-right: 1px #f14906;
   }
   #message-1 {
     width:0px;
     height:0px;
-    animation: reveal-1 7s infinite;
+    animation: reveal-1 10s infinite;
   }
   #message-1 span {
     margin-left:-50vw;
-    animation: slidein-1 7s infinite;
+    animation: slidein-1 10s infinite;
   }
   
   
@@ -218,7 +220,9 @@
       30% { margin-left:0px; }
       100% { margin-left:0px; }
   }
-  
+                   /*RADAR*/
+                 
+
   .radar, .sweep { position: absolute; }
 .radar {
   overflow: hidden; 
@@ -229,20 +233,23 @@
   box-shadow: 0 0 0 1px hsla(0, 0%, 0%, 0.5),
     inset 0 0 0 1px hsla(0, 0%, 100%, 0.15);
   background: 
-    repeating-radial-gradient(transparent, transparent 23px, #287a33 25px, #287a33 27px), 
+    repeating-radial-gradient(transparent, transparent 23px, rgb(234, 74, 5) 25px, #2b8d38 27px), 
     linear-gradient(transparent 49.75%, #0e4c42 49.75%, #0e4c42 50.25%, transparent 50.25%) 50% no-repeat,
     linear-gradient(90deg, transparent 49.75%, #0e4c42 49.75%, #0e4c42 50.25%, transparent 50.25%) 50% no-repeat,
-    linear-gradient(#333, #111);
+    linear-gradient(#035455, #035455);
   background-size: 100%, 218px 218px, 218px 218px, 100%;
 }
+
 .sweep {
   box-sizing: border-box;
   top: 16px; left: 16px;
   border-right: solid 1px hsla(145, 50%, 40%, .3);
-  width: 108px; height: 108px;
+  width:108px; height: 108px;
   border-radius: 100% 0 0 0;
   transform-origin: 100% 100%;
-  background: linear-gradient(50deg, rgba(34, 34, 34, 0) 56%, hsla(145, 50%, 40%, 1));
+  background: linear-gradient(50deg, rgba(34, 34, 34, 0) 56%, rgb(234, 74, 5));
   animation: sweep 5s infinite linear;
 }
+
 @keyframes sweep { to { transform: rotate(360deg); } }
+
