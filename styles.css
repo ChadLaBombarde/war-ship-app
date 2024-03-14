@@ -16,7 +16,7 @@
     font-family: sans-serif;
     letter-spacing: 1px;
     word-spacing: 2px;
-    color: #fff;
+    color: #f10606;
     font-size: 40px;
     font-weight: 888;
     text-transform: uppercase;
@@ -127,7 +127,7 @@
   /*AMIMATED BANNER*/
   
   body {
-    margin-top:2rem;
+    margin-top:1rem;
   }
   /*a {
     color: red;
@@ -194,49 +194,7 @@
     margin-left:-50vw;
     animation: slidein-1 7s infinite;
   }
-  /*
-  #topic-2 {
-    animation: showup-2 30s infinite;
-    border-right: 1px solid #646;
-  }
-  #message-2 {
-    width:0px;
-    height:0px;
-    animation: reveal-2 30s infinite;
-  }
-  #message-2 span {
-    margin-left:-600px;
-    animation: slidein-2 30s infinite;
-  }
   
-  #topic-3 {
-    animation: showup-3 30s infinite;
-    border-right: 1px solid #616;
-  }
-  #message-3 {
-    width:0px;
-    height:0px;
-    animation: reveal-3 30s infinite;
-  }
-  #message-3 span {
-    margin-left:-600px;
-    animation: slidein-3 30s infinite;
-  }*/
-  /* This is old; Keep as a backup reference */
-  /*#topic-2 {
-    animation: showup-2 7s infinite;
-    animation-delay: 8s;
-    border-right: 1px solid #CCC;
-  }
-  #message-2 {
-    width:0px;
-    animation: reveal-2 7s infinite;
-    animation-delay: 8s;
-  }
-  #message-2 span {
-    margin-left:-600px;
-    animation: slidein-2 7s infinite;
-  }*/
   
   /* This is the animation code. */
   
@@ -261,36 +219,30 @@
       100% { margin-left:0px; }
   }
   
-  /* Test animation CSS; This worked at the 7-second duration */
-  /*
-  @keyframes showup-1 {
-      0% {opacity:0;border-right-color: transparent;}
-      20% {opacity:1;}
-      35% {border-right-color: #AAA;}
-      80% {opacity:1;}
-      100% {opacity:0;}
-  }
-  @keyframes reveal-1 {
-      0% {opacity:0;width:0px;height:0;}
-      20% {opacity:1;width:0px;height:30px;}
-      30% {width:550px;}
-      80% {opacity:1;}
-      100% {opacity:0;width:550px;height:30px;}
-  }
-  @keyframes slidein-1 {
-      0% { margin-left:-600px; }
-      20% { margin-left:-600px; }
-      30% { margin-left:0px; }
-      100% { margin-left:0px; }
-  }*/
-  
-  
-  
-  /*@keyframes move {
-     0% { transform: translateX(0); }
-     50% { transform: translateX(20px); }
-     100% { transform: translateX(100px); }
-  }*/
-  
-  
-  
+  .radar, .sweep { position: absolute; }
+.radar {
+  overflow: hidden; 
+  top: 50%; left: 50%;
+  margin: -117px;
+  width: 248px; height: 248px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px hsla(0, 0%, 0%, 0.5),
+    inset 0 0 0 1px hsla(0, 0%, 100%, 0.15);
+  background: 
+    repeating-radial-gradient(transparent, transparent 23px, #287a33 25px, #287a33 27px), 
+    linear-gradient(transparent 49.75%, #0e4c42 49.75%, #0e4c42 50.25%, transparent 50.25%) 50% no-repeat,
+    linear-gradient(90deg, transparent 49.75%, #0e4c42 49.75%, #0e4c42 50.25%, transparent 50.25%) 50% no-repeat,
+    linear-gradient(#333, #111);
+  background-size: 100%, 218px 218px, 218px 218px, 100%;
+}
+.sweep {
+  box-sizing: border-box;
+  top: 16px; left: 16px;
+  border-right: solid 1px hsla(145, 50%, 40%, .3);
+  width: 108px; height: 108px;
+  border-radius: 100% 0 0 0;
+  transform-origin: 100% 100%;
+  background: linear-gradient(50deg, rgba(34, 34, 34, 0) 56%, hsla(145, 50%, 40%, 1));
+  animation: sweep 5s infinite linear;
+}
+@keyframes sweep { to { transform: rotate(360deg); } }
