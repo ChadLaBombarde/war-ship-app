@@ -170,6 +170,7 @@
     overflow:hidden;
     border: 1px solid transparent;
     font-family: Stencil Std, fantasy;
+
   }
   .message-topic {
     color: #f14906;
@@ -225,9 +226,10 @@
 
   .radar, .sweep { position: absolute; }
 .radar {
+    padding-top: 10;
   overflow: hidden; 
   top: 50%; left: 50%;
-  margin: -117px;
+  margin: -75px;
   width: 248px; height: 248px;
   border-radius: 50%;
   box-shadow: 0 0 0 1px hsla(0, 0%, 0%, 0.5),
