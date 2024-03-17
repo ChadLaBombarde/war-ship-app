@@ -254,7 +254,7 @@
 }
 
 @keyframes sweep { to { transform: rotate(360deg); } }
-h1.fleet{
-  
-  justify-content: center;
+
+h1.ready{
+  color:#f14906;
 }
