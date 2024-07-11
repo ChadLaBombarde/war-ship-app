@@ -3,6 +3,11 @@
   margin: 0;
   padding: 0;
   }
+  .banner{
+    height: 200px;
+    width: auto;
+    background-color: #035455;
+  }
   .wrapper {
     display: grid;
     height: 100%;
@@ -10,14 +15,7 @@
     background: linear-gradient(180deg, #035455, 5%, #035455, 50%, #030423);
     position: absolute;
   }
-  .header{
-    background: transparent;
-    background-color: #035455;
-    font-size: 50px;
-    display: flex;
-    color: #f14906;
-    justify-content: center;
-  }
+  
   
                /*BUBBLES*/
 
@@ -130,14 +128,20 @@
   
  
                    /*RADAR*/
-                 
+   .radar-container{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+   }              
 
   .radar, .sweep { position: absolute; }
 .radar {
-   display: inline-block;
-  overflow: hidden; 
-  top: 50%; left: 50%;
-  margin: -100px;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  /*top: 50%; left: 50%;
+  margin: -100px;*/
   width: 248px; height: 248px;
   border-radius: 50%;
   box-shadow: 0 0 0 1px hsla(0, 0%, 0%, 0.5),
@@ -164,5 +168,7 @@
 @keyframes sweep { to { transform: rotate(360deg); } }
 
 h1.ready{
+  display: flex;
+  justify-content: center;
   color:#f14906;
 }
